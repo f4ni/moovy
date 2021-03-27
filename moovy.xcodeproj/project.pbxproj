@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3030BCF455516F5E9812C95E /* Pods_moovy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC4AC31CF67BE189D300425 /* Pods_moovy.framework */; };
+		3199EA86D8E056057AFF53CA /* Pods_moovy_moovyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67502C1EA176623FB72EBE9 /* Pods_moovy_moovyUITests.framework */; };
+		4A3F5BEC260E61AE00F4993F /* SimilarMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3F5BEB260E61AE00F4993F /* SimilarMoviesCollectionViewCell.swift */; };
+		4A3F8F88260EEFBC00BA8B5B /* upcomingMoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3F8F87260EEFBC00BA8B5B /* upcomingMoviesTableViewCell.swift */; };
+		4A6C89B2260D04FC002DE563 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C89B1260D04FC002DE563 /* AppDelegate.swift */; };
+		4A6C89B4260D04FC002DE563 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C89B3260D04FC002DE563 /* SceneDelegate.swift */; };
+		4A6C89B6260D04FC002DE563 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C89B5260D04FC002DE563 /* MainViewController.swift */; };
+		4A6C89BB260D04FC002DE563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C89BA260D04FC002DE563 /* Assets.xcassets */; };
+		4A6C89BE260D04FC002DE563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C89BC260D04FC002DE563 /* LaunchScreen.storyboard */; };
+		4A6C89C9260D04FD002DE563 /* moovyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C89C8260D04FD002DE563 /* moovyTests.swift */; };
+		4A6C89D4260D04FD002DE563 /* moovyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C89D3260D04FD002DE563 /* moovyUITests.swift */; };
+		4A6C89F6260D0A2C002DE563 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C89F5260D0A2C002DE563 /* APIService.swift */; };
+		4A6C89FB260D10A9002DE563 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C89FA260D10A9002DE563 /* Model.swift */; };
+		4A6C8A03260D1D22002DE563 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C8A02260D1D22002DE563 /* MoviesViewModel.swift */; };
+		4A6C8A11260D974C002DE563 /* nowPlayingMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C8A10260D974C002DE563 /* nowPlayingMovieCollectionViewCell.swift */; };
+		4A6C8A21260D9C25002DE563 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C8A20260D9C25002DE563 /* DetailViewController.swift */; };
+		84E8538BC5EF84B61B513AD3 /* Pods_moovyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375229C3FE03AA763AEEE7CF /* Pods_moovyTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A6C89C5260D04FD002DE563 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A6C89A6260D04FC002DE563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A6C89AD260D04FC002DE563;
+			remoteInfo = moovy;
+		};
+		4A6C89D0260D04FD002DE563 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A6C89A6260D04FC002DE563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A6C89AD260D04FC002DE563;
+			remoteInfo = moovy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08459A05F6725E73B5E4CC56 /* Pods-moovy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moovy.release.xcconfig"; path = "Target Support Files/Pods-moovy/Pods-moovy.release.xcconfig"; sourceTree = "<group>"; };
+		16C33A94CCF03364F942683F /* Pods-moovy-moovyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moovy-moovyUITests.debug.xcconfig"; path = "Target Support Files/Pods-moovy-moovyUITests/Pods-moovy-moovyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		375229C3FE03AA763AEEE7CF /* Pods_moovyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moovyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A3F5BEB260E61AE00F4993F /* SimilarMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
+		4A3F8F87260EEFBC00BA8B5B /* upcomingMoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = upcomingMoviesTableViewCell.swift; sourceTree = "<group>"; };
+		4A6C89AE260D04FC002DE563 /* moovy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moovy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6C89B1260D04FC002DE563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A6C89B3260D04FC002DE563 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4A6C89B5260D04FC002DE563 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4A6C89BA260D04FC002DE563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A6C89BD260D04FC002DE563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A6C89BF260D04FC002DE563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6C89C4260D04FD002DE563 /* moovyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moovyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6C89C8260D04FD002DE563 /* moovyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moovyTests.swift; sourceTree = "<group>"; };
+		4A6C89CA260D04FD002DE563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6C89CF260D04FD002DE563 /* moovyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moovyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6C89D3260D04FD002DE563 /* moovyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moovyUITests.swift; sourceTree = "<group>"; };
+		4A6C89D5260D04FD002DE563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6C89F5260D0A2C002DE563 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4A6C89FA260D10A9002DE563 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4A6C8A02260D1D22002DE563 /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
+		4A6C8A10260D974C002DE563 /* nowPlayingMovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nowPlayingMovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		4A6C8A20260D9C25002DE563 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		87F27E7F31D0A6C30372E739 /* Pods-moovyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moovyTests.release.xcconfig"; path = "Target Support Files/Pods-moovyTests/Pods-moovyTests.release.xcconfig"; sourceTree = "<group>"; };
+		8CC4AC31CF67BE189D300425 /* Pods_moovy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moovy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9048F5F19FDE22D812FFE403 /* Pods-moovyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moovyTests.debug.xcconfig"; path = "Target Support Files/Pods-moovyTests/Pods-moovyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9403BD3AB176A9107DA4FDE1 /* Pods-moovy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moovy.debug.xcconfig"; path = "Target Support Files/Pods-moovy/Pods-moovy.debug.xcconfig"; sourceTree = "<group>"; };
+		A67502C1EA176623FB72EBE9 /* Pods_moovy_moovyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moovy_moovyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F83029C407F46D737D98B144 /* Pods-moovy-moovyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moovy-moovyUITests.release.xcconfig"; path = "Target Support Files/Pods-moovy-moovyUITests/Pods-moovy-moovyUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A6C89AB260D04FC002DE563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3030BCF455516F5E9812C95E /* Pods_moovy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A6C89C1260D04FD002DE563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E8538BC5EF84B61B513AD3 /* Pods_moovyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A6C89CC260D04FD002DE563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3199EA86D8E056057AFF53CA /* Pods_moovy_moovyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		324267C3572F638DACE59C45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9403BD3AB176A9107DA4FDE1 /* Pods-moovy.debug.xcconfig */,
+				08459A05F6725E73B5E4CC56 /* Pods-moovy.release.xcconfig */,
+				16C33A94CCF03364F942683F /* Pods-moovy-moovyUITests.debug.xcconfig */,
+				F83029C407F46D737D98B144 /* Pods-moovy-moovyUITests.release.xcconfig */,
+				9048F5F19FDE22D812FFE403 /* Pods-moovyTests.debug.xcconfig */,
+				87F27E7F31D0A6C30372E739 /* Pods-moovyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		468C28C1851C08A37CD99CA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CC4AC31CF67BE189D300425 /* Pods_moovy.framework */,
+				A67502C1EA176623FB72EBE9 /* Pods_moovy_moovyUITests.framework */,
+				375229C3FE03AA763AEEE7CF /* Pods_moovyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A6C89A5260D04FC002DE563 = {
+			isa = PBXGroup;
+			children = (
+				4A6C89B0260D04FC002DE563 /* moovy */,
+				4A6C89C7260D04FD002DE563 /* moovyTests */,
+				4A6C89D2260D04FD002DE563 /* moovyUITests */,
+				4A6C89AF260D04FC002DE563 /* Products */,
+				324267C3572F638DACE59C45 /* Pods */,
+				468C28C1851C08A37CD99CA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4A6C89AF260D04FC002DE563 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C89AE260D04FC002DE563 /* moovy.app */,
+				4A6C89C4260D04FD002DE563 /* moovyTests.xctest */,
+				4A6C89CF260D04FD002DE563 /* moovyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A6C89B0260D04FC002DE563 /* moovy */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C8A19260D9AA8002DE563 /* Service */,
+				4A6C8A18260D9A85002DE563 /* Model */,
+				4A6C8A17260D9A79002DE563 /* ViewModel */,
+				4A6C8A16260D9A69002DE563 /* View */,
+				4A6C8A15260D9A57002DE563 /* Controller */,
+				4A6C89B1260D04FC002DE563 /* AppDelegate.swift */,
+				4A6C89B3260D04FC002DE563 /* SceneDelegate.swift */,
+				4A6C89BA260D04FC002DE563 /* Assets.xcassets */,
+				4A6C89BC260D04FC002DE563 /* LaunchScreen.storyboard */,
+				4A6C89BF260D04FC002DE563 /* Info.plist */,
+			);
+			path = moovy;
+			sourceTree = "<group>";
+		};
+		4A6C89C7260D04FD002DE563 /* moovyTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C89C8260D04FD002DE563 /* moovyTests.swift */,
+				4A6C89CA260D04FD002DE563 /* Info.plist */,
+			);
+			path = moovyTests;
+			sourceTree = "<group>";
+		};
+		4A6C89D2260D04FD002DE563 /* moovyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C89D3260D04FD002DE563 /* moovyUITests.swift */,
+				4A6C89D5260D04FD002DE563 /* Info.plist */,
+			);
+			path = moovyUITests;
+			sourceTree = "<group>";
+		};
+		4A6C8A15260D9A57002DE563 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C89B5260D04FC002DE563 /* MainViewController.swift */,
+				4A6C8A20260D9C25002DE563 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A6C8A16260D9A69002DE563 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C8A10260D974C002DE563 /* nowPlayingMovieCollectionViewCell.swift */,
+				4A3F5BEB260E61AE00F4993F /* SimilarMoviesCollectionViewCell.swift */,
+				4A3F8F87260EEFBC00BA8B5B /* upcomingMoviesTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A6C8A17260D9A79002DE563 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C8A02260D1D22002DE563 /* MoviesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4A6C8A18260D9A85002DE563 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C89FA260D10A9002DE563 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A6C8A19260D9AA8002DE563 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C89F5260D0A2C002DE563 /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A6C89AD260D04FC002DE563 /* moovy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A6C89D8260D04FD002DE563 /* Build configuration list for PBXNativeTarget "moovy" */;
+			buildPhases = (
+				4A9FD3E1C4ED9AD455744CC3 /* [CP] Check Pods Manifest.lock */,
+				4A6C89AA260D04FC002DE563 /* Sources */,
+				4A6C89AB260D04FC002DE563 /* Frameworks */,
+				4A6C89AC260D04FC002DE563 /* Resources */,
+				8F47E4AEE2F4799128DDD73D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = moovy;
+			productName = moovy;
+			productReference = 4A6C89AE260D04FC002DE563 /* moovy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A6C89C3260D04FD002DE563 /* moovyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A6C89DB260D04FD002DE563 /* Build configuration list for PBXNativeTarget "moovyTests" */;
+			buildPhases = (
+				8234563E3016B5E12EE74012 /* [CP] Check Pods Manifest.lock */,
+				4A6C89C0260D04FD002DE563 /* Sources */,
+				4A6C89C1260D04FD002DE563 /* Frameworks */,
+				4A6C89C2260D04FD002DE563 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A6C89C6260D04FD002DE563 /* PBXTargetDependency */,
+			);
+			name = moovyTests;
+			productName = moovyTests;
+			productReference = 4A6C89C4260D04FD002DE563 /* moovyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A6C89CE260D04FD002DE563 /* moovyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A6C89DE260D04FD002DE563 /* Build configuration list for PBXNativeTarget "moovyUITests" */;
+			buildPhases = (
+				22F556DE1E141498F397FA18 /* [CP] Check Pods Manifest.lock */,
+				4A6C89CB260D04FD002DE563 /* Sources */,
+				4A6C89CC260D04FD002DE563 /* Frameworks */,
+				4A6C89CD260D04FD002DE563 /* Resources */,
+				3D65CEFD3ACF848758E1B14D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A6C89D1260D04FD002DE563 /* PBXTargetDependency */,
+			);
+			name = moovyUITests;
+			productName = moovyUITests;
+			productReference = 4A6C89CF260D04FD002DE563 /* moovyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A6C89A6260D04FC002DE563 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					4A6C89AD260D04FC002DE563 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					4A6C89C3260D04FD002DE563 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 4A6C89AD260D04FC002DE563;
+					};
+					4A6C89CE260D04FD002DE563 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 4A6C89AD260D04FC002DE563;
+					};
+				};
+			};
+			buildConfigurationList = 4A6C89A9260D04FC002DE563 /* Build configuration list for PBXProject "moovy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A6C89A5260D04FC002DE563;
+			productRefGroup = 4A6C89AF260D04FC002DE563 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A6C89AD260D04FC002DE563 /* moovy */,
+				4A6C89C3260D04FD002DE563 /* moovyTests */,
+				4A6C89CE260D04FD002DE563 /* moovyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A6C89AC260D04FC002DE563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6C89BE260D04FC002DE563 /* LaunchScreen.storyboard in Resources */,
+				4A6C89BB260D04FC002DE563 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A6C89C2260D04FD002DE563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A6C89CD260D04FD002DE563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22F556DE1E141498F397FA18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-moovy-moovyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D65CEFD3ACF848758E1B14D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-moovy-moovyUITests/Pods-moovy-moovyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-moovy-moovyUITests/Pods-moovy-moovyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-moovy-moovyUITests/Pods-moovy-moovyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A9FD3E1C4ED9AD455744CC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-moovy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8234563E3016B5E12EE74012 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-moovyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F47E4AEE2F4799128DDD73D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-moovy/Pods-moovy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-moovy/Pods-moovy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-moovy/Pods-moovy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A6C89AA260D04FC002DE563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6C89FB260D10A9002DE563 /* Model.swift in Sources */,
+				4A6C8A03260D1D22002DE563 /* MoviesViewModel.swift in Sources */,
+				4A3F8F88260EEFBC00BA8B5B /* upcomingMoviesTableViewCell.swift in Sources */,
+				4A6C8A11260D974C002DE563 /* nowPlayingMovieCollectionViewCell.swift in Sources */,
+				4A6C89B6260D04FC002DE563 /* MainViewController.swift in Sources */,
+				4A6C89B2260D04FC002DE563 /* AppDelegate.swift in Sources */,
+				4A6C89F6260D0A2C002DE563 /* APIService.swift in Sources */,
+				4A3F5BEC260E61AE00F4993F /* SimilarMoviesCollectionViewCell.swift in Sources */,
+				4A6C89B4260D04FC002DE563 /* SceneDelegate.swift in Sources */,
+				4A6C8A21260D9C25002DE563 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A6C89C0260D04FD002DE563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6C89C9260D04FD002DE563 /* moovyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A6C89CB260D04FD002DE563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6C89D4260D04FD002DE563 /* moovyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A6C89C6260D04FD002DE563 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A6C89AD260D04FC002DE563 /* moovy */;
+			targetProxy = 4A6C89C5260D04FD002DE563 /* PBXContainerItemProxy */;
+		};
+		4A6C89D1260D04FD002DE563 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A6C89AD260D04FC002DE563 /* moovy */;
+			targetProxy = 4A6C89D0260D04FD002DE563 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A6C89BC260D04FC002DE563 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A6C89BD260D04FC002DE563 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A6C89D6260D04FD002DE563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A6C89D7260D04FD002DE563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A6C89D9260D04FD002DE563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9403BD3AB176A9107DA4FDE1 /* Pods-moovy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = moovy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.f4ni.moovy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A6C89DA260D04FD002DE563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08459A05F6725E73B5E4CC56 /* Pods-moovy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = moovy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.f4ni.moovy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A6C89DC260D04FD002DE563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9048F5F19FDE22D812FFE403 /* Pods-moovyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 664UK652FK;
+				INFOPLIST_FILE = moovyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.f4ni.moovyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/moovy.app/moovy";
+			};
+			name = Debug;
+		};
+		4A6C89DD260D04FD002DE563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87F27E7F31D0A6C30372E739 /* Pods-moovyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 664UK652FK;
+				INFOPLIST_FILE = moovyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.f4ni.moovyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/moovy.app/moovy";
+			};
+			name = Release;
+		};
+		4A6C89DF260D04FD002DE563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C33A94CCF03364F942683F /* Pods-moovy-moovyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 664UK652FK;
+				INFOPLIST_FILE = moovyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.f4ni.moovyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = moovy;
+			};
+			name = Debug;
+		};
+		4A6C89E0260D04FD002DE563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F83029C407F46D737D98B144 /* Pods-moovy-moovyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 664UK652FK;
+				INFOPLIST_FILE = moovyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.f4ni.moovyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = moovy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A6C89A9260D04FC002DE563 /* Build configuration list for PBXProject "moovy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6C89D6260D04FD002DE563 /* Debug */,
+				4A6C89D7260D04FD002DE563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A6C89D8260D04FD002DE563 /* Build configuration list for PBXNativeTarget "moovy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6C89D9260D04FD002DE563 /* Debug */,
+				4A6C89DA260D04FD002DE563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A6C89DB260D04FD002DE563 /* Build configuration list for PBXNativeTarget "moovyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6C89DC260D04FD002DE563 /* Debug */,
+				4A6C89DD260D04FD002DE563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A6C89DE260D04FD002DE563 /* Build configuration list for PBXNativeTarget "moovyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6C89DF260D04FD002DE563 /* Debug */,
+				4A6C89E0260D04FD002DE563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A6C89A6260D04FC002DE563 /* Project object */;
+}
